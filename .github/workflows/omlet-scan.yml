@@ -19,5 +19,5 @@ jobs:
 
     - name: Run Omlet analysis
       env:
-        OMLET_TOKEN: ${{ Omlet.OMLET_TOKEN }}
+        OMLET_TOKEN: ${{ secrets.OMLET_TOKEN }}
       run: npx @omlet/cli analyze

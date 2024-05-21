@@ -19,9 +19,9 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: yarn install
+        run: npm ci
 
       - name: Run analyze
-        run: yarn dlx @omlet/cli analyze
+        run: npx @omlet/cli analyze
         env:
           OMLET_TOKEN: ${{ secrets.OMLET_TOKEN }}

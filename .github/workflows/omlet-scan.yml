@@ -22,6 +22,6 @@ jobs:
         run: yarn install
 
       - name: Run analyze
-        run: yarn dlx @omlet/cli analyze
+        run: npx @omlet/cli analyze
         env:
           OMLET_TOKEN: ${{ secrets.OMLET_TOKEN }}

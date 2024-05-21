@@ -1,16 +1,27 @@
-name: Omlet CLI Scan
+name: Analyze on push to main
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
-  scan:
+  analyze:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Run Omlet analysis
-      env:
-        OMLET_TOKEN: ${{ secrets.OMLET_TOKEN }}
-      run: npx @omlet/cli analyze
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Run analyze
+        run: yarn dlx @omlet/cli analyze
+        env:
+          OMLET_TOKEN: ${{ secrets.OMLET_TOKEN }}

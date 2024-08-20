@@ -4922,7 +4922,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nodelib/fs.walk@npm:^1.2.3, @nodelib/fs.walk@npm:^1.2.8":
+"@nodelib/fs.walk@npm:^1.2.3, @nodelib/fs.walk@npm:^1.2.6, @nodelib/fs.walk@npm:^1.2.8":
   version: 1.2.8
   resolution: "@nodelib/fs.walk@npm:1.2.8"
   dependencies:
@@ -14520,6 +14520,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"codeowners@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "codeowners@npm:5.1.1"
+  dependencies:
+    "@nodelib/fs.walk": "npm:^1.2.6"
+    commander: "npm:^6.2.1"
+    find-up: "npm:^2.1.0"
+    ignore: "npm:^3.3.10"
+    is-directory: "npm:^0.3.1"
+    lodash.intersection: "npm:^4.4.0"
+    lodash.maxby: "npm:^4.6.0"
+    lodash.padend: "npm:^4.6.1"
+    true-case-path: "npm:^1.0.3"
+  bin:
+    codeowners: index.js
+  checksum: 10c0/895afd9501adc71ad18c6c904237621196007205883cbdc9425b8dc2e3e67d87a1889904602938bdaac4118129d4ce66a6aec6caebcd8dc9f4fb64a9ba0c305a
+  languageName: node
+  linkType: hard
+
 "collapse-white-space@npm:^1.0.2":
   version: 1.0.6
   resolution: "collapse-white-space@npm:1.0.6"
@@ -19573,7 +19592,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-up@npm:^2.0.0":
+"find-up@npm:^2.0.0, find-up@npm:^2.1.0":
   version: 2.1.0
   resolution: "find-up@npm:2.1.0"
   dependencies:
@@ -20656,7 +20675,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.1.1, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6, glob@npm:^7.1.7, glob@npm:^7.2.0":
+"glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6, glob@npm:^7.1.7, glob@npm:^7.2.0":
   version: 7.2.3
   resolution: "glob@npm:7.2.3"
   dependencies:
@@ -21870,6 +21889,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ignore@npm:^3.3.10":
+  version: 3.3.10
+  resolution: "ignore@npm:3.3.10"
+  checksum: 10c0/973e0ef3b3eaab8fc19014d80014ed11bcf3585de8088d9c7a5b5c4edefc55f4ecdc498144bdd0440b8e2ff22deb03f89c90300bfef2d1750d5920f997d0a600
+  languageName: node
+  linkType: hard
+
 "ignore@npm:^4.0.3, ignore@npm:^4.0.6":
   version: 4.0.6
   resolution: "ignore@npm:4.0.6"
@@ -22482,6 +22508,13 @@ __metadata:
     is-data-descriptor: "npm:^1.0.0"
     kind-of: "npm:^6.0.2"
   checksum: 10c0/a05169c7a87feb88fc155e3ada469090cfabb5a548a3f794358b511cc47a0871b8b95e7345be4925a22ef3df585c3923b31943b3ad6255ce563a9d97f2e221e0
+  languageName: node
+  linkType: hard
+
+"is-directory@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "is-directory@npm:0.3.1"
+  checksum: 10c0/1c39c7d1753b04e9483b89fb88908b8137ab4743b6f481947e97ccf93ecb384a814c8d3f0b95b082b149c5aa19c3e9e4464e2791d95174bce95998c26bb1974b
   languageName: node
   linkType: hard
 
@@ -25024,6 +25057,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.intersection@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "lodash.intersection@npm:4.4.0"
+  checksum: 10c0/b4c98577367aa9bf37cb69313f0355b4121a8fb0dbf5832232156fef58e8662b8bd67f81000688a802e2ab4e7417723fba3f78b5105d50eab1e84de2648bd834
+  languageName: node
+  linkType: hard
+
 "lodash.isarguments@npm:^3.1.0":
   version: 3.1.0
   resolution: "lodash.isarguments@npm:3.1.0"
@@ -25080,6 +25120,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.maxby@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "lodash.maxby@npm:4.6.0"
+  checksum: 10c0/752db8fdb890a796c3be2fc9e469376da203ce650306fec65fc2ebecf181a89f127ffa4c59b32f2901faaab4f18e8ee3c994071e5075a42a0ec19817de66c591
+  languageName: node
+  linkType: hard
+
 "lodash.memoize@npm:4.x, lodash.memoize@npm:^4.1.2":
   version: 4.1.2
   resolution: "lodash.memoize@npm:4.1.2"
@@ -25098,6 +25145,13 @@ __metadata:
   version: 4.1.1
   resolution: "lodash.once@npm:4.1.1"
   checksum: 10c0/46a9a0a66c45dd812fcc016e46605d85ad599fe87d71a02f6736220554b52ffbe82e79a483ad40f52a8a95755b0d1077fba259da8bfb6694a7abbf4a48f1fc04
+  languageName: node
+  linkType: hard
+
+"lodash.padend@npm:^4.6.1":
+  version: 4.6.1
+  resolution: "lodash.padend@npm:4.6.1"
+  checksum: 10c0/da10eae6e7862541e431d97e652ea66690307104676a30793398e2f66d0fd9a62b07f199451d2185560d9b4627dc6652d33dc7cceb7ab9d843f6e15addec56f5
   languageName: node
   linkType: hard
 
@@ -32665,6 +32719,7 @@ __metadata:
     "@proton/stylelint-config-proton": "workspace:packages/stylelint-config-proton"
     "@trivago/prettier-plugin-sort-imports": "npm:^4.3.0"
     "@types/jest-when": "npm:^3.5.5"
+    codeowners: "npm:^5.1.1"
     husky: "npm:^9.0.11"
     is-ci: "npm:^3.0.1"
     lint-staged: "npm:^15.2.2"
@@ -35611,6 +35666,15 @@ __metadata:
   version: 1.0.5
   resolution: "trough@npm:1.0.5"
   checksum: 10c0/f036d0d7f9bc7cfe5ee650d70b57bb1f048f3292adf6c81bb9b228e546b2b2e5b74ea04a060d21472108a8cda05ec4814bbe86f87ee35c182c50cb41b5c1810a
+  languageName: node
+  linkType: hard
+
+"true-case-path@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "true-case-path@npm:1.0.3"
+  dependencies:
+    glob: "npm:^7.1.2"
+  checksum: 10c0/6235caddf342fd04281001e6724fd302bdc77b4977bcff4d1fea8ca3539e75398b14120b48f1cf3de9a0ce35a5fa1aaf62e0e0a60e7322a1b37e772af876e19b
   languageName: node
   linkType: hard
 
